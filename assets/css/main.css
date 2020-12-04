@@ -99,12 +99,42 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		    background: linear-gradient(270deg, #28dc76, #2860dc, #ae28dc, #dc284b, #d79713, #cad713, #26d713, #d713b6);
+		    background-size: 1600% 1600%;
+
+		    -webkit-animation: AnimationName 28s ease infinite;
+		    -moz-animation: AnimationName 28s ease infinite;
+		    animation: AnimationName 28s ease infinite;
+		}
+
+		@-webkit-keyframes AnimationName {
+		    0%{background-position:0% 50%}
+		    50%{background-position:100% 51%}
+		    100%{background-position:0% 50%}
+		}
+		@-moz-keyframes AnimationName {
+		    0%{background-position:0% 50%}
+		    50%{background-position:100% 51%}
+		    100%{background-position:0% 50%}
+		}
+		@keyframes AnimationName {
+		    0%{background-position:0% 50%}
+		    50%{background-position:100% 51%}
+		    100%{background-position:0% 50%}
+		}
+
+
+		/*background: rgb(11,0,36);
+background: -moz-linear-gradient(180deg, rgba(11,0,36,1) 0%, rgba(9,10,121,1) 36%, rgba(0,108,255,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(11,0,36,1) 0%, rgba(9,10,121,1) 36%, rgba(0,108,255,1) 100%);
+background: linear-gradient(180deg, rgba(11,0,36,1) 0%, rgba(9,10,121,1) 36%, rgba(0,108,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0024",endColorstr="#006cff",GradientType=1);*/
+		/*background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	}
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -120,7 +150,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		/*background-color: #935d8c;*/
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2815,7 +2845,7 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: 100%; /*calc(33.33333% - 2em);*/
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
@@ -2832,7 +2862,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.features li {
-				width: calc(50% - 2em);
+				width: calc(60% - 2em);
 			}
 
 				.features li:nth-child(3) {
@@ -3708,6 +3738,13 @@ input, select, textarea {
 			text-align: center;
 		}
 
+		#footer .icons {
+			width: 100%;
+			margin: 2.5em 0 2em 0;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#footer {
@@ -3732,7 +3769,7 @@ input, select, textarea {
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: center;
 				}
 
 		}
